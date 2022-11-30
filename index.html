@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <header class="header">
+                <header class="header text-center">
                     <h1 class="header-title">Shopping List 🥬</h1>
                 </header>
             </div>
@@ -26,45 +26,67 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <form action="#">
-                        <div class="col d-flex">
-                            <div class="col-md-3">
-                                <!-- Food Type Drop Down Button Menu Set -->
-                                <div class="dropdown">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Types of Grocery
-                                    </a>
-                                    <!-- Food Type Dropdown Menu -->
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-item">Fruit</li>
-                                        <li class="dropdown-item">Vegetables</li>
-                                        <li class="dropdown-item">Grains</li>
-                                        <li class="dropdown-item">Dairy</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- Food Items -->
-                            <div class="col-md-9">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Food Item</span>
-                                    <input type="text" class="form-control" placeholder="Enter Food Item Here" aria-label="foodItem" aria-describedby="basic-addon1" id="foodItem" name="">
+                    <form action="#" id="form">
+                        <div class="col">
+                            <div class="col">
+                                <!-- Food Type -->
+                                <div class="col d-flex justify-content-between" id="food-type-cont">
+                                    <!-- Fruit -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="fruit">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        Fruit</label>
+                                        
+                                    </div>
+                                    <!-- Vegetables= -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="vegetables">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                        Vegetables</label>
+                                    </div>
+
+                                    <!-- Grains -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="grains">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                        Grains</label>
+                                    </div>
+
+                                    <!-- Dairy -->
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="dairy">
+                                        <label class="form-check-label" for="flexRadioDefault4">
+                                        Dairy</label>
+                                    </div>
+
                                 </div>
 
-                                <!-- Amount of the Food Item -->
+                                
+                            </div>
+
+
+                            <!-- Food Items -->
+                            <div class="col-md-6">
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon2">Item Amount</span>
-                                    <input type="number" class="form-control" placeholder="How many would you like?" aria-label="foodItem" aria-describedby="basic-addon2" id="itemAmount" name="">
+                                    <span class="input-group-text" id="basic-addon1">Food Item</span>
+                                    <input type="text" class="form-control" placeholder="Enter Food Item Here" aria-label="foodItem" aria-describedby="basic-addon1" id="foodItem" name="" required>
+                                </div>
+
+                                <!-- Count of the Food Item -->
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon2">Item Count</span>
+                                    <input type="number" class="form-control" placeholder="How many would you like?" aria-label="foodItem" aria-describedby="basic-addon2" id="itemCount" name="" required>
                                 </div>
 
                                 <!-- Price of the Food Item -->
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon3">Item Price</span>
-                                    <input type="number" class="form-control" placeholder="$ Price" aria-label="foodItem" aria-describedby="basic-addon3" id="itemPrice" name="">
+                                    <input type="number" class="form-control" placeholder="$ Price" aria-label="foodItem" aria-describedby="basic-addon3" id="itemPrice" name="" required>
                                 </div>
                             </div>
 
                         </div>
-                        <button type="submit" class="btn btn-secondary">Submit</button>
+                        <button type="submit" class="btn btn-secondary" id="submit">Submit</button>
                     </form>
                 </div>
             </div>

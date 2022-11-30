@@ -1,11 +1,22 @@
 * {
-    outline:1px dotted red;
+    /* outline:1px dotted red; */
 }
 
 /* Header */
 /* -------------------------------------- */
 .header-title{
-    margin-top: 20px;
+    margin-top: 30px;
     color: rgb(87, 87, 163);
     font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* Radios */
+/* -------------------------------------- */
+#food-type-cont{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid black;
 }
