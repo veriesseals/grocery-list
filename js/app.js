@@ -20,11 +20,14 @@ class ShoppingList {
         // Gain Access to these Elements
         // ----------------------------------------------------
         this.form = document.getElementById('form');
-        this.radio = document.querySelector('.form-check-input');
         this.foodItem = document.getElementById('foodItem');
         this.itemCount = document.getElementById('itemCount');
         this.itemPrice = document.getElementById('itemPrice');
         this.button = document.getElementById('button')
+        this.groceryCards = document.getElementById('groceryCards')
+        this.flexRadioDefault = document.querySelector('input[name=flexRadioDefault]').value;
+        this.radio = document.querySelector('input[type=radio]:checked')
+        this.result = document.getElementById('result')
     }
 
     // INIT
@@ -35,22 +38,22 @@ class ShoppingList {
 
     // Call Form Submit Calls
     // ----------------------------------------------------
+    
     formSubmit() {
-        this.form.addEventListener('change', (e) => {
-            e.preventDefault();
-            console.log('.form-check-input')
-        })
-
         this.form.addEventListener('submit', (e) => {
             e.preventDefault();
             // console.log('click');
             this.addFoodItems();
+            let result = document.querySelector('p')
+            let selected = document.querySelector('input[type="radio"]:checked');
+            result.innerText = selected.parentElement.textContent;
         })
     }
 
     // Add Food Items
     // ----------------------------------------------------
     addFoodItems() {
+        // console.log(this.result)
         let found = false;
         // console.log('test')
         console.log(this.foodItem.value);
@@ -63,18 +66,27 @@ class ShoppingList {
             }
         })
 
+
+
+        
+
+        // Card Attempt 
+        // ----------------------------------------------------
         if(!found) {
-            console.log(this.foodItem);
-            this.foodItem.innerHTML += `
-            <li class="dropdown-item">${this.foodItem.value, this.itemCount.value, this.itemPrice.value}</li>
+            // console.log(this.foodItem);
+            this.groceryCards.innerHTML += `
+            ${'Food Item: ' + this.foodItem.value}, 
+            ${'You have ' + this.itemCount.value +' '+ this.foodItem.value +' in your Cart!'}, $${this.itemPrice.value +'.00'}</p>
             `;
             this.shoppingListArr.push(this.foodItem.value);
             this.foodItem.value = '';
         }
+        
     }
 
 
 }
+
 // Calling Methods
 // ----------------------------------------------------
 let action = new ShoppingList();

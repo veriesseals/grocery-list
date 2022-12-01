@@ -28,67 +28,81 @@
                 <div class="col">
                     <form action="#" id="form">
                         <div class="col">
-                            <div class="col">
-                                <!-- Food Type -->
-                                <div class="col d-flex justify-content-between" id="food-type-cont">
-                                    <!-- Fruit -->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="fruit">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                        Fruit</label>
-                                        
-                                    </div>
-                                    <!-- Vegetables= -->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="vegetables">
-                                        <label class="form-check-label" for="flexRadioDefault2">
-                                        Vegetables</label>
-                                    </div>
-
-                                    <!-- Grains -->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="grains">
-                                        <label class="form-check-label" for="flexRadioDefault3">
-                                        Grains</label>
-                                    </div>
-
-                                    <!-- Dairy -->
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="dairy">
-                                        <label class="form-check-label" for="flexRadioDefault4">
-                                        Dairy</label>
-                                    </div>
-
+                            <!-- Food Type -->
+                            <div class="col d-flex justify-content-between" id="food-type-cont">
+                                <!-- Fruit -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="fruit" value="fruit">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                    Fruit</label>
+                                    
+                                </div>
+                                <!-- Vegetables= -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="vegetables" value="vegetables">
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                    Vegetables</label>
                                 </div>
 
-                                
-                            </div>
-
-
-                            <!-- Food Items -->
-                            <div class="col-md-6">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Food Item</span>
-                                    <input type="text" class="form-control" placeholder="Enter Food Item Here" aria-label="foodItem" aria-describedby="basic-addon1" id="foodItem" name="" required>
+                                <!-- Grains -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="grains" value="grains">
+                                    <label class="form-check-label" for="flexRadioDefault3">
+                                    Grains</label>
                                 </div>
 
-                                <!-- Count of the Food Item -->
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon2">Item Count</span>
-                                    <input type="number" class="form-control" placeholder="How many would you like?" aria-label="foodItem" aria-describedby="basic-addon2" id="itemCount" name="" required>
-                                </div>
-
-                                <!-- Price of the Food Item -->
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon3">Item Price</span>
-                                    <input type="number" class="form-control" placeholder="$ Price" aria-label="foodItem" aria-describedby="basic-addon3" id="itemPrice" name="" required>
+                                <!-- Dairy -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="dairy" value="dairy">
+                                    <label class="form-check-label" for="flexRadioDefault4">
+                                    Dairy</label>
                                 </div>
                             </div>
-
                         </div>
+
+                        <!-- Food Items -->
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Food Item</span>
+                                <input type="text" class="form-control" placeholder="Enter Food Item Here" aria-label="foodItem" aria-describedby="basic-addon1" id="foodItem" name="" required>
+                            </div>
+
+                            <!-- Count of the Food Item -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon2">Item Count</span>
+                                <input type="number" class="form-control" placeholder="How many would you like?" aria-label="foodItem" aria-describedby="basic-addon2" id="itemCount" name="" required>
+                            </div>
+
+                            <!-- Price of the Food Item -->
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon3">Item Price</span>
+                                <input type="number" class="form-control" placeholder="$ Price" aria-label="foodItem" aria-describedby="basic-addon3" id="itemPrice" name="" required>
+                            </div>
+                        </div>
+
                         <button type="submit" class="btn btn-secondary" id="submit">Submit</button>
                     </form>
                 </div>
+
+                <section class="container">
+                    <h2>Shopping Card</h2>
+                    <div class="resultCont">
+                        
+                    </div>
+                    <div class="row" id="groceryCards">
+                        <!-- <div class="col-md-3">
+                            <div class="card member-card">
+                                <img src="https://via.placeholder.com/50x50" alt="placeholder img" class="img-fluid" />
+                                <div class="card-body">
+                                    <p id="result"></p>
+                                    <p id="foodItem">Food Item</p>
+                                    <p id="itemCount">Item Count</p>
+                                    <p id="itemPrice">Item Price</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
             </div>
         </div>
 

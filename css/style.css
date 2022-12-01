@@ -1,6 +1,6 @@
-* {
-    /* outline:1px dotted red; */
-}
+/* * {
+    outline:1px dotted red;
+} */
 
 /* Header */
 /* -------------------------------------- */
@@ -19,4 +19,13 @@
     margin-bottom: 20px;
     padding: 5px;
     border: 1px solid black;
+}
+
+/* Shopping Card */
+/* -------------------------------------- */
+
+h2 {
+    margin-top: 30px;
+    color: rgb(87, 87, 163);
+    font-family: 'Roboto', sans-serif;
 }
