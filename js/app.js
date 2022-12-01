@@ -44,10 +44,15 @@ class ShoppingList {
             e.preventDefault();
             // console.log('click');
             this.addFoodItems();
-            let result = document.querySelector('p')
-            let selected = document.querySelector('input[type="radio"]:checked');
-            result.innerText = selected.parentElement.textContent;
+            this.foodType();
         })
+    }
+    
+    foodType() {
+        let result = document.querySelector('p')
+        let selected = document.querySelector('input[type="radio"]:checked');
+        result.innerText = selected.parentElement.textContent;
+
     }
 
     // Add Food Items
@@ -75,8 +80,8 @@ class ShoppingList {
         if(!found) {
             // console.log(this.foodItem);
             this.groceryCards.innerHTML += `
-            ${'Food Item: ' + this.foodItem.value}, 
-            ${'You have ' + this.itemCount.value +' '+ this.foodItem.value +' in your Cart!'}, $${this.itemPrice.value +'.00'}</p>
+            ${'Selected Food:  ' + this.foodItem.value}, 
+            ${'You have  ' + this.itemCount.value + ' ' + this.foodItem.value +' in your Cart!  '}, $${this.itemPrice.value +'.00'}</p>
             `;
             this.shoppingListArr.push(this.foodItem.value);
             this.foodItem.value = '';

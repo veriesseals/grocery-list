@@ -29,3 +29,9 @@ h2 {
     color: rgb(87, 87, 163);
     font-family: 'Roboto', sans-serif;
 }
+
+#result{
+    margin-bottom: 500px;
+    font-size: 66px;
+    font-weight: 800;
+}
