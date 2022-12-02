@@ -4,12 +4,16 @@
 
 /* Header */
 /* -------------------------------------- */
+.top-header {
+    background-color: rgb(193, 96, 26);
+}
+
 .header-title{
     margin-top: 30px;
-    color: rgb(87, 87, 163);
+    color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     padding: 5px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 /* Radios */
@@ -21,6 +25,11 @@
     border: 1px solid black;
 }
 
+#submit {
+    color: whitesmoke;
+    background-color: rgb(193, 96, 26)
+}
+
 /* Shopping Card */
 /* -------------------------------------- */
 
@@ -30,8 +39,16 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
-#result{
-    margin-bottom: 500px;
-    font-size: 66px;
-    font-weight: 800;
+#horizontal-ln-mid {
+    margin-top: 60px;
 }
+
+#footer{
+    color: whitesmoke;
+    margin-top: 12%;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: rgb(193, 96, 26);
+
+}
+

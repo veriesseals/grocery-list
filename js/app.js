@@ -21,7 +21,7 @@ class ShoppingList {
         // ----------------------------------------------------
         this.form = document.getElementById('form');
         this.foodItem = document.getElementById('foodItem');
-        this.itemCount = document.getElementById('itemCount');
+        this.itemQuantity = document.getElementById('itemQuantity');
         this.itemPrice = document.getElementById('itemPrice');
         this.button = document.getElementById('button')
         this.groceryCards = document.getElementById('groceryCards')
@@ -62,7 +62,7 @@ class ShoppingList {
         let found = false;
         // console.log('test')
         console.log(this.foodItem.value);
-        console.log('You have ' + this.itemCount.value +' '+ this.foodItem.value +' In your cart');
+        console.log('You have ' + this.itemQuantity.value +' '+ this.foodItem.value +' In your cart');
         console.log('$' + this.itemPrice.value);
 
         this.shoppingListArr.forEach(item => {
@@ -81,7 +81,7 @@ class ShoppingList {
             // console.log(this.foodItem);
             this.groceryCards.innerHTML += `
             ${'Selected Food:  ' + this.foodItem.value}, 
-            ${'You have  ' + this.itemCount.value + ' ' + this.foodItem.value +' in your Cart!  '}, $${this.itemPrice.value +'.00'}</p>
+            ${'You have  ' + this.itemQuantity.value + ' ' + this.foodItem.value +' in your Cart!  '}, $${this.itemPrice.value +'.00'}</p>
             `;
             this.shoppingListArr.push(this.foodItem.value);
             this.foodItem.value = '';
